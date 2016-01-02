@@ -64,7 +64,7 @@
     }
 }
 
-@mixin btn-color($color, $darken: 10%) {
+@mixin button-color($color, $darken: 10%) {
     background: $color;
     &:hover {
         background: darken($color, $darken);

@@ -1,14 +1,23 @@
-/* =Grid
------------------------------------------------------------------------------*/
-.units-container,
-.units-row {
+/*
+==================================================
+Grid
+==================================================
+*/
+
+
+.container,
+.row {
     @include clearfix;
 }
-.units-container { /* it's the trick to not collapse padding-top in the child element */
+.container { /* it's the trick to not collapse padding-top in the child element */
     padding-top: 1px;
     margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    //max-width: 90em;
 }
-.units-row {
+.row {
     @include rem('margin-bottom', $baseLineInEms);
 }
 
@@ -36,42 +45,42 @@ textarea.unit-100 { width: 98.8%; }
 select.width-100,
 select.unit-100   { width: 99.4%; }
 
-.units-row .unit-90,
-.units-row .unit-80,
-.units-row .unit-75,
-.units-row .unit-70,
-.units-row .unit-66,
-.units-row .unit-65,
-.units-row .unit-60,
-.units-row .unit-50,
-.units-row .unit-40,
-.units-row .unit-35,
-.units-row .unit-33,
-.units-row .unit-30,
-.units-row .unit-25,
-.units-row .unit-20,
-.units-row .unit-10 {
+.row .unit-90,
+.row .unit-80,
+.row .unit-75,
+.row .unit-70,
+.row .unit-66,
+.row .unit-65,
+.row .unit-60,
+.row .unit-50,
+.row .unit-40,
+.row .unit-35,
+.row .unit-33,
+.row .unit-30,
+.row .unit-25,
+.row .unit-20,
+.row .unit-10 {
     float: left;
     margin-left: $gridGutterWidth/($gridWidth/100)*1%;
     &:first-child {
         margin-left: 0;
     }
 }
-.units-row .unit-90 { @include columns(9, 10); }
-.units-row .unit-80 { @include columns(4, 5); }
-.units-row .unit-75 { @include columns(3, 4); }
-.units-row .unit-70 { @include columns(7, 10); }
-.units-row .unit-66 { @include columns(2, 3); }
-.units-row .unit-65 { @include columns(2, 3); }
-.units-row .unit-60 { @include columns(3, 5); }
-.units-row .unit-50 { @include column(2); }
-.units-row .unit-40 { @include columns(2, 5); }
-.units-row .unit-35 { @include column(3); }
-.units-row .unit-33 { @include column(3); }
-.units-row .unit-30 { @include columns(3, 10); }
-.units-row .unit-25 { @include column(4); }
-.units-row .unit-20 { @include column(5); }
-.units-row .unit-10 { @include columns(1, 10); }
+.row .unit-90 { @include columns(9, 10); }
+.row .unit-80 { @include columns(4, 5); }
+.row .unit-75 { @include columns(3, 4); }
+.row .unit-70 { @include columns(7, 10); }
+.row .unit-66 { @include columns(2, 3); }
+.row .unit-65 { @include columns(2, 3); }
+.row .unit-60 { @include columns(3, 5); }
+.row .unit-50 { @include column(2); }
+.row .unit-40 { @include columns(2, 5); }
+.row .unit-35 { @include column(3); }
+.row .unit-33 { @include column(3); }
+.row .unit-30 { @include columns(3, 10); }
+.row .unit-25 { @include column(4); }
+.row .unit-20 { @include column(5); }
+.row .unit-10 { @include columns(1, 10); }
 
 .unit-push-90,
 .unit-push-80,
@@ -106,7 +115,7 @@ select.unit-100   { width: 99.4%; }
 .unit-push-20 { @include column-push(5); }
 .unit-push-10 { @include columns-push(1, 10); }
 
-.units-row .unit-push-right {
+.row .unit-push-right {
     float: right;
 }
 
@@ -119,82 +128,82 @@ select.unit-100   { width: 99.4%; }
 .unit-padding {
     @include rem('padding', $baseLineInEms);
 }
-.units-padding .unit-100,
-.units-padding .unit-90,
-.units-padding .unit-80,
-.units-padding .unit-75,
-.units-padding .unit-70,
-.units-padding .unit-66,
-.units-padding .unit-65,
-.units-padding .unit-60,
-.units-padding .unit-50,
-.units-padding .unit-40,
-.units-padding .unit-35,
-.units-padding .unit-33,
-.units-padding .unit-30,
-.units-padding .unit-25,
-.units-padding .unit-20,
-.units-padding .unit-10 {
+.padding .unit-100,
+.padding .unit-90,
+.padding .unit-80,
+.padding .unit-75,
+.padding .unit-70,
+.padding .unit-66,
+.padding .unit-65,
+.padding .unit-60,
+.padding .unit-50,
+.padding .unit-40,
+.padding .unit-35,
+.padding .unit-33,
+.padding .unit-30,
+.padding .unit-25,
+.padding .unit-20,
+.padding .unit-10 {
     @include rem('padding', $baseLineInEms);
 }
 
-.units-split .unit-90,
-.units-split .unit-80,
-.units-split .unit-75,
-.units-split .unit-70,
-.units-split .unit-66,
-.units-split .unit-65,
-.units-split .unit-60,
-.units-split .unit-50,
-.units-split .unit-40,
-.units-split .unit-35,
-.units-split .unit-33,
-.units-split .unit-30,
-.units-split .unit-25,
-.units-split .unit-20,
-.units-split .unit-10 {
+.split .unit-90,
+.split .unit-80,
+.split .unit-75,
+.split .unit-70,
+.split .unit-66,
+.split .unit-65,
+.split .unit-60,
+.split .unit-50,
+.split .unit-40,
+.split .unit-35,
+.split .unit-33,
+.split .unit-30,
+.split .unit-25,
+.split .unit-20,
+.split .unit-10 {
     margin-left: 0;
 }
-.units-split .unit-90 { width: 90%;   }
-.units-split .unit-80 { width: 80%;   }
-.units-split .unit-75 { width: 75%;   }
-.units-split .unit-70 { width: 70%;   }
-.units-split .unit-66 { width: 66.6%; }
-.units-split .unit-65 { width: 65%;   }
-.units-split .unit-60 { width: 60%;   }
-.units-split .unit-50 { width: 50%;   }
-.units-split .unit-40 { width: 40%;   }
-.units-split .unit-35 { width: 35%;   }
-.units-split .unit-33 { width: 33.3%; }
-.units-split .unit-30 { width: 30%;   }
-.units-split .unit-25 { width: 25%;   }
-.units-split .unit-20 { width: 20%;   }
-.units-split .unit-10 { width: 10%;   }
+.split .unit-90 { width: 90%;   }
+.split .unit-80 { width: 80%;   }
+.split .unit-75 { width: 75%;   }
+.split .unit-70 { width: 70%;   }
+.split .unit-66 { width: 66.6%; }
+.split .unit-65 { width: 65%;   }
+.split .unit-60 { width: 60%;   }
+.split .unit-50 { width: 50%;   }
+.split .unit-40 { width: 40%;   }
+.split .unit-35 { width: 35%;   }
+.split .unit-33 { width: 33.3%; }
+.split .unit-30 { width: 30%;   }
+.split .unit-25 { width: 25%;   }
+.split .unit-20 { width: 20%;   }
+.split .unit-10 { width: 10%;   }
 
 
 /* =Responsive
 -----------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
 
-    .mobile-width-100 {
+    .mobile-100 {
         width: 100%;
     }
 
-    .units-row .unit-90,
-    .units-row .unit-80,
-    .units-row .unit-75,
-    .units-row .unit-70,
-    .units-row .unit-66,
-    .units-row .unit-65,
-    .units-row .unit-60,
-    .units-row .unit-50,
-    .units-row .unit-40,
-    .units-row .unit-35,
-    .units-row .unit-33,
-    .units-row .unit-30,
-    .units-row .unit-25,
-    .units-row .unit-20,
-    .units-row .unit-10 {
+    .row .unit-90,
+    .row .unit-80,
+    .row .unit-75,
+    .row .unit-70,
+    .row .unit-66,
+    .row .unit-65,
+    .row .unit-60,
+    .row .unit-50,
+    .row .unit-40,
+    .row .unit-35,
+    .row .unit-33,
+    .row .unit-30,
+    .row .unit-25,
+    .row .unit-20,
+    .row .unit-10 {
         width: 100%;
         float: none;
         margin-left: 0;
@@ -219,44 +228,44 @@ select.unit-100   { width: 99.4%; }
         left: 0;
     }
 
-    .units-row .unit-push-right {
+    .row .unit-push-right {
         float: none;
     }
 
-    .units-mobile-50 .unit-90,
-    .units-mobile-50 .unit-80,
-    .units-mobile-50 .unit-75,
-    .units-mobile-50 .unit-70,
-    .units-mobile-50 .unit-66,
-    .units-mobile-50 .unit-65,
-    .units-mobile-50 .unit-60,
-    .units-mobile-50 .unit-50,
-    .units-mobile-50 .unit-40,
-    .units-mobile-50 .unit-30,
-    .units-mobile-50 .unit-35,
-    .units-mobile-50 .unit-33,
-    .units-mobile-50 .unit-25,
-    .units-mobile-50 .unit-20,
-    .units-mobile-50 .unit-10 {
+    .mobile-50 .unit-90,
+    .mobile-50 .unit-80,
+    .mobile-50 .unit-75,
+    .mobile-50 .unit-70,
+    .mobile-50 .unit-66,
+    .mobile-50 .unit-65,
+    .mobile-50 .unit-60,
+    .mobile-50 .unit-50,
+    .mobile-50 .unit-40,
+    .mobile-50 .unit-30,
+    .mobile-50 .unit-35,
+    .mobile-50 .unit-33,
+    .mobile-50 .unit-25,
+    .mobile-50 .unit-20,
+    .mobile-50 .unit-10 {
         float: left;
         margin-left: $gridGutterWidth/($gridWidth/100)*1%;
         @include column(2);
     }
-    .units-mobile-50 .unit-90:first-child,
-    .units-mobile-50 .unit-80:first-child,
-    .units-mobile-50 .unit-75:first-child,
-    .units-mobile-50 .unit-70:first-child,
-    .units-mobile-50 .unit-66:first-child,
-    .units-mobile-50 .unit-65:first-child,
-    .units-mobile-50 .unit-60:first-child,
-    .units-mobile-50 .unit-50:first-child,
-    .units-mobile-50 .unit-40:first-child,
-    .units-mobile-50 .unit-35:first-child,
-    .units-mobile-50 .unit-30:first-child,
-    .units-mobile-50 .unit-33:first-child,
-    .units-mobile-50 .unit-25:first-child,
-    .units-mobile-50 .unit-20:first-child,
-    .units-mobile-50 .unit-10:first-child {
+    .mobile-50 .unit-90:first-child,
+    .mobile-50 .unit-80:first-child,
+    .mobile-50 .unit-75:first-child,
+    .mobile-50 .unit-70:first-child,
+    .mobile-50 .unit-66:first-child,
+    .mobile-50 .unit-65:first-child,
+    .mobile-50 .unit-60:first-child,
+    .mobile-50 .unit-50:first-child,
+    .mobile-50 .unit-40:first-child,
+    .mobile-50 .unit-35:first-child,
+    .mobile-50 .unit-30:first-child,
+    .mobile-50 .unit-33:first-child,
+    .mobile-50 .unit-25:first-child,
+    .mobile-50 .unit-20:first-child,
+    .mobile-50 .unit-10:first-child {
         margin-left: 0;
     }
 

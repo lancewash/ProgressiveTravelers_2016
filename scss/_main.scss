@@ -1,0 +1,45 @@
+/*
+==================================================
+Main
+==================================================
+*/
+
+.canvas {
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+header {
+  display: table;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 999999;
+  background: #fff;
+  top: 0;
+  padding: 0 4rem;
+  left: 0;
+  
+  .row {
+    display: table-cell;
+  }
+
+  p {
+    line-height: 4rem;
+    margin: 0;
+    text-align: right;
+    
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  .logo {
+
+    img {
+      position: relative;
+      bottom: -21px;
+    }
+  }
+}
