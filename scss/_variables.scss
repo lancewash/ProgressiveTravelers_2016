@@ -8,6 +8,7 @@ $codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
 $backgroundBody: #fff;
 $colorBody: #333;
 $colorHeadings: #222;
+$colorHighlight: #EE7404;
 
 // Grid
 $gridWidth: 1000;
@@ -20,9 +21,9 @@ $baseLine: $baseFontSize * $baseLineHeight;
 $baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
-$h1FontSize: $baseFontSize + 22px; // 36px
-$h2FontSize: $baseFontSize + 16px; // 30px
-$h3FontSize: $baseFontSize + 10px; // 24px
+$h1FontSize: $baseFontSize + 42px; // 36px
+$h2FontSize: $baseFontSize + 22px; // 30px
+$h3FontSize: $baseFontSize + 16px; // 24px
 $h4FontSize: $baseFontSize + 4px; // 18px
 $h5FontSize: $baseFontSize + 0px; // 14px
 $h6FontSize: $baseFontSize - 2px; // 12px

@@ -6,12 +6,12 @@ Main
 
 .canvas {
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 1rem;
 }
 
 header {
   display: table;
-  height: 4rem;
+  height: 1rem;
   width: 100%;
   position: fixed;
   right: 0;
@@ -26,7 +26,7 @@ header {
   }
 
   p {
-    line-height: 4rem;
+    line-height: 2rem;
     margin: 0;
     text-align: right;
     
@@ -39,7 +39,6 @@ header {
 
     img {
       position: relative;
-      bottom: -21px;
     }
   }
 }

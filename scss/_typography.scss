@@ -9,6 +9,12 @@ body {
 }
 a {
     color: $colorLink;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+
     &:focus,
     &:hover {
         color: $colorLinkHover;
@@ -23,19 +29,19 @@ h5,
 h6 {
     font-family: $headingsFontFamily;
     font-weight: bold;
-    color: $colorHeadings;
+    color: $colorHighlight;
     text-align: center;
     text-rendering: optimizeLegibility;
 }
 h1 {
     font-size: $h1FontSize;
     line-height: 1.111em;
-    margin-bottom: .25em;
+    margin-bottom: 2rem;
 }
 h2 {
     font-size: $h2FontSize;
     line-height: 1.111em;
-    margin-bottom: .5em;
+    margin-bottom: 1.5rem;
 }
 h3 {
     font-size: $h3FontSize;
