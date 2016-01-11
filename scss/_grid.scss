@@ -18,7 +18,7 @@ Grid
     //max-width: 90em;
 }
 .row {
-    @include rem('margin-bottom', $baseLineInEms);
+    @include rem('margin-bottom', $baseLineInEms *1.55);
 }
 
 .width-100, .unit-100 { width: 100%;  }

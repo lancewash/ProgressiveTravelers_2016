@@ -38,6 +38,11 @@ Helpers
 }
 .text-centered {
     text-align: center;
+
+    li {
+        list-style-type: none;
+    }
+
 }
 .text-right {
     text-align: right;
@@ -66,8 +71,16 @@ Helpers
 .right {
     float: right !important;
 }
-
-
+.pad {
+    padding: 4em;
+}
+.pad-s {
+    padding: 2.5em;
+}
+.flex-wrap {
+    display: flex;
+    //margin-bottom: 0;
+}
 /* Responsive embedded objects */
 .video-wrapper {
     height: 0;

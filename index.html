@@ -23,7 +23,7 @@
                 <div class="unit-50 logo">
                     <a href=""><img src="img/progressive-travelers-logo-center.png" alt=""></a>
                 </div>
-                <div class="feature">
+                <div class="feature content-main">
                     <h1>Shuffle Along</h1>
                     <h2>Saturday, June 4, 2016</h2>
                     <p>Brian Stokes Mitchell and Audra Mcdonald will reunite on broadway in shuffle along. Billy Porter
@@ -48,24 +48,26 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="unit-80 centered">
+                <div class="unit-60 centered text-centered content-main">
                     <h1>Want Something Different</h1>
                     <h2>We Can Customize Any Trip
                         To Fit Your Groups Needs</h2>
-                    <p><strong>Choose a package or let us create one to better suit your needs!</strong><br>
-                        Specialzing in planning group trips for:
-                        Seniors
-                        Churches
-                        Sororities
-                        Fraternities
-                        Social and Professional Organizations
-                        Family Reunions
-                        Trips and accomodations customized according to individual needs and specifications
-
+                    <!--<h3>Choose a package or let us create one to better suit your needs!</h3>-->
+                    <div class="highlight">
+                        <h3>Specialzing in planning<br>group trips for:</h3>
+                        <ul>
+                            <li>Seniors</li>
+                            <li>Churches</li>
+                            <li>Sororities</li>
+                            <li>Fraternities</li>
+                            <li>Social and Professional Organizations</li>
+                            <li>Family Reunions</li>
+                        </ul>
+                    </div>
+                        <p>Trips and accomodations customized according to individual needs and specifications
                         The Progressive Travelers will reserve and book hotel lodgings, air and any other modes of required transportation, restaurants, tour guides and escorts when needed, and will attend to any detail needed to make your trip a success and Ultimate Traveling Experience.
 
                         Deluxe Motorcoach Transportation can be arranged for every occasion.
-
                         Professional courteous service always provided.
                         Don’t see what you need?
                         Call Us - We Can Arrange It!</p>
@@ -78,35 +80,35 @@
 <script src="js/jquery-ui.js"></script>
 <script src="js/slick.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $(".banner").slick({
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 1000,
-            arrows: false,
-            fade: true,
-            //lazyLoad: "progressive",
-            mobileFirst: true,
-            pauseOnDotsHover: false
-        });
-// On swipe event
-        $('.banner').on('swipe', function (event, slick, direction) {
-            console.log(direction);
-// left
-        });
+$(document).ready(function () {
+    $(".banner").slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 1000,
+        arrows: false,
+        fade: true,
+        //lazyLoad: "progressive",
+        mobileFirst: true,
+        pauseOnDotsHover: false
     });
+// On swipe event
+    $('.banner').on('swipe', function (event, slick, direction) {
+        console.log(direction);
+// left
+    });
+});
 </script>
 <script src="js/jquery.stellar.min.js"></script>
 <script>
-    $(function () {
-        $.stellar({
-            horizontalScrolling: false,
-            verticalOffset: 0,
-            parallaxBackgrounds: true,
-            hideDistantElements: true
-        });
+$(function () {
+    $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 0,
+        parallaxBackgrounds: true,
+        hideDistantElements: true
     });
+});
 </script>
 </body>
 </html>

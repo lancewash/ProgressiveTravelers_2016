@@ -3,23 +3,25 @@
 body {
     background: $backgroundBody;
     color: $colorBody;
-    font-size: $baseFontSize + 0px;
+    font-size: $baseFontSize + 4px;
     @include rem('line-height', $baseLineInEms);
     font-family: $baseFontFamily;
+    letter-spacing: .05rem;
 }
 a {
     color: $colorLink;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    -ms-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 
     &:focus,
     &:hover {
         color: $colorLinkHover;
     }
 }
+
 .title,
 h1,
 h2,
@@ -27,23 +29,32 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headingsFontFamily;
-    font-weight: bold;
+    font-family: $subheadingsFontFamily;
+    font-weight: 200;
     color: $colorHighlight;
-    text-align: center;
+    letter-spacing: .05rem;
+    //text-align: center;
     text-rendering: optimizeLegibility;
 }
 h1 {
     font-size: $h1FontSize;
+    font-family: $headingsFontFamily;
+    font-weight: 900;
+    letter-spacing: .1rem;
     line-height: 1.111em;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    //text-align: center;
+    text-transform: uppercase;
 }
 h2 {
+    color: $colorHeadings;
     font-size: $h2FontSize;
+    font-style: italic;
     line-height: 1.111em;
-    margin-bottom: 1.5rem;
+    margin-bottom: .75rem;
 }
 h3 {
+    color: $colorHeadings;
     font-size: $h3FontSize;
     line-height: 1.333em;
     margin-bottom: .5em;
@@ -67,13 +78,13 @@ h6 {
 
 /* =Subheading
 -----------------------------------------------------------------------------*/
-hgroup h1:first-child,
-hgroup h2:first-child,
-hgroup h3:first-child,
-hgroup h4:first-child,
-hgroup h5:first-child, {
-    margin-bottom: 0;
-}
+//hgroup h1:first-child,
+//hgroup h2:first-child,
+//hgroup h3:first-child,
+//hgroup h4:first-child,
+//hgroup h5:first-child, {
+//    margin-bottom: 0;
+//}
 h1.subheading,
 h2.subheading,
 h3.subheading,
@@ -122,7 +133,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-    @include rem('margin', 0, 0, 0, $baseLineInEms);
+    @include rem('margin', 0, 0, 0, $baseLineInEms * .6);
 }
 ol ol li {
     list-style-type: lower-alpha;
@@ -142,7 +153,7 @@ form,
 fieldset,
 figure,
 address {
-    @include rem('margin-bottom', $baseLineInEms);
+    @include rem('margin-bottom', $baseLineInEms * .5);
 }
 address {
     font-style: normal;

@@ -1,13 +1,14 @@
 // Font
-$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headingsFontFamily: $baseFontFamily;
+$baseFontFamily: 'riccione-lightregular', sans-serif;
+$headingsFontFamily: 'riccione-boldregular';
+$subheadingsFontFamily: 'riccione-mediumregular';
 $controlsFontFamily: $baseFontFamily;
 $codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // Base color
 $backgroundBody: #fff;
 $colorBody: #333;
-$colorHeadings: #222;
+$colorHeadings: #555;
 $colorHighlight: #EE7404;
 
 // Grid
@@ -16,14 +17,14 @@ $gridGutterWidth: 30;
 
 // Type
 $baseFontSize: 14;
-$baseLineHeight: 1.6;
+$baseLineHeight: 1.75;
 $baseLine: $baseFontSize * $baseLineHeight;
 $baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
-$h1FontSize: $baseFontSize + 42px; // 36px
-$h2FontSize: $baseFontSize + 22px; // 30px
-$h3FontSize: $baseFontSize + 16px; // 24px
+$h1FontSize: $baseFontSize + 28px; // 50px
+$h2FontSize: $baseFontSize + 12px; // 22px
+$h3FontSize: $baseFontSize + 8px; // 24px
 $h4FontSize: $baseFontSize + 4px; // 18px
 $h5FontSize: $baseFontSize + 0px; // 14px
 $h6FontSize: $baseFontSize - 2px; // 12px
