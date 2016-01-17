@@ -32,7 +32,7 @@
                     <p>Brian Stokes Mitchell and Audra Mcdonald will reunite on broadway in shuffle along. Billy Porter
                         joins them, Scott Rudin is producing the show, George C. Wolfe wrote a new book for the
                         musicalas well as direct, and Savion Glover will choreograph.</p>
-                    <a href="#featured-trips" class="button">Featured Trips</a>
+                    <a href="#featured-trips" class="button scroll">Featured Trips</a>
                 </div>
 
             </div>
@@ -214,6 +214,29 @@
             hideDistantElements: true
         });
     });
+</script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1250);
+        });
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 800) {
+            $(".scroll.right").fadeIn();
+        } else {
+            $(".scroll.right").fadeOut();
+        }
+    });
+    //Sticky Active state
+    $(function(){
+        $('.sticky a').click(function () {
+            $('.sticky a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+
 </script>
 </body>
 </html>

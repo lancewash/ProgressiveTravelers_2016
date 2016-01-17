@@ -272,11 +272,6 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
-a:focus,
-a:hover {
-  color: #d70a16;
-}
-
 .title,
 h1,
 h2,

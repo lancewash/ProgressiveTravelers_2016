@@ -16,10 +16,10 @@ a {
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
 
-    &:focus,
-    &:hover {
-        color: $colorLinkHover;
-    }
+    //&:focus,
+    //&:hover {
+    //    color: $colorLinkHover;
+    //}
 }
 
 .title,
