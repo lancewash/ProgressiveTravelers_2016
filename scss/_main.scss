@@ -37,6 +37,9 @@ header {
     }
   }
   .logo {
+    /*background: url("../img/progressive-travelers-logo-center.png") no-repeat;
+    height: 160px;
+    width: 303px;*/
 
     img {
       position: relative;
@@ -154,5 +157,13 @@ a[href="#featured-trips"] {
     border: 2px solid rgba(0,0,0,0);
     padding-bottom: 2.25rem;
     bottom: -45px;
+  }
+}
+
+.trip-posts {
+  
+  article {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 2em 0;
   }
 }

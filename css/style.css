@@ -1454,6 +1454,23 @@ Banner
   position: relative;
 }
 
+.banner-img .logo a {
+  display: block;
+  background: url("../img/progressive-travelers-logo-center.png") no-repeat;
+  height: 160px;
+  margin: 100px auto;
+  width: 303px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner-img .logo a:hover {
+  background: url("../img/progressive-travelers-logo-center-clr.png") no-repeat;
+}
+
 .banner-img div {
   color: #fff;
   margin: 100px auto;
@@ -1474,7 +1491,7 @@ Banner
 }
 
 .banner-1 {
-  background: url("../img/img-1.jpg") 0 0 no-repeat;
+  background: url("../img/img-2.jpg") 50% 50% no-repeat;
 }
 
 .banner-2 {
@@ -1652,6 +1669,12 @@ header p a {
   text-transform: uppercase;
 }
 
+header .logo {
+  /*background: url("../img/progressive-travelers-logo-center.png") no-repeat;
+    height: 160px;
+    width: 303px;*/
+}
+
 header .logo img {
   position: relative;
 }
@@ -1758,4 +1781,9 @@ a[href="#featured-trips"]:hover {
   border: 2px solid transparent;
   padding-bottom: 2.25rem;
   bottom: -45px;
+}
+
+.trip-posts article {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2em 0;
 }

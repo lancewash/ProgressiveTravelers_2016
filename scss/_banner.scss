@@ -46,10 +46,28 @@ Banner
 .banner-img {
   height: 100%;
   position: relative;
-  
+
+  .logo a {
+    display: block;
+    background: url("../img/progressive-travelers-logo-center.png") no-repeat;
+    height: 160px;
+    margin: 100px auto;
+    width: 303px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      background: url("../img/progressive-travelers-logo-center-clr.png") no-repeat;
+    }
+  }
+
   div {
     color: #fff;
     margin: 100px auto;
+
     //position: relative;
     //top: 100px;
     //width: 60%;
@@ -72,7 +90,7 @@ Banner
 }
 
 .banner-1 {
-  background: url("../img/img-1.jpg") 0 0 no-repeat;
+  background: url("../img/img-2.jpg") 50% 50% no-repeat;
   //background-position: 0 0 !important;
   //height: 100%;
 }
