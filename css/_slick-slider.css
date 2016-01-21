@@ -9,7 +9,9 @@ Slick Slider
 .slick-slider {
   position: relative;
   display: block;
+  height: calc(100vh - 50px);
   box-sizing: border-box;
+
   -moz-box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

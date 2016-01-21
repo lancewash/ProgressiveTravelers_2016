@@ -35,6 +35,7 @@ h6 {
     letter-spacing: .05rem;
     //text-align: center;
     text-rendering: optimizeLegibility;
+    text-transform: uppercase;
 }
 h1 {
     font-size: $h1FontSize;
@@ -49,12 +50,12 @@ h1 {
 h2 {
     color: $colorHeadings;
     font-size: $h2FontSize;
-    font-style: italic;
+    //font-style: italic;
     line-height: 1.111em;
     margin-bottom: .75rem;
 }
 h3 {
-    color: $colorHeadings;
+    //color: $colorHeadings;
     font-size: $h3FontSize;
     line-height: 1.333em;
     margin-bottom: .5em;

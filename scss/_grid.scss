@@ -94,9 +94,9 @@ select.unit-100   { width: 99.4%; }
 .unit-push-35,
 .unit-push-33,
 .unit-push-30,
-.unit-push-25,
-.unit-push-20,
-.unit-push-10 {
+.push-25,
+.push-20,
+.push-10 {
     position: relative;
 }
 .unit-push-90 { @include columns-push(9, 10); }
