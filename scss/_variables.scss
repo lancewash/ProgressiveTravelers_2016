@@ -1,7 +1,7 @@
 // Font
 $baseFontFamily: 'nexa_lightregular', 'riccione-lightregular', sans-serif;
-$headingsFontFamily: 'nexa_boldregular', 'AvenirLTStd-Roman', 'riccione-boldregular';
-$subheadingsFontFamily: 'nexa_boldregular', 'AvenirLTStd-Roman', 'riccione-mediumregular';
+$headingsFontFamily: 'AvenirLTStd-Roman', 'nexa_boldregular', 'AvenirLTStd-Roman', 'riccione-boldregular';
+$subheadingsFontFamily: 'AvenirLTStd-Roman', 'nexa_boldregular', 'AvenirLTStd-Roman', 'riccione-mediumregular';
 $controlsFontFamily: $baseFontFamily;
 $codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -22,9 +22,9 @@ $baseLine: $baseFontSize * $baseLineHeight;
 $baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
-$h1FontSize: $baseFontSize + 28px; // 50px
-$h2FontSize: $baseFontSize + 12px; // 22px
-$h3FontSize: $baseFontSize + 20px; // 24px
+$h1FontSize: $baseFontSize + 16px; // 50px
+$h2FontSize: $baseFontSize + 6px; // 22px
+$h3FontSize: $baseFontSize + 10px; // 24px
 $h4FontSize: $baseFontSize + 4px; // 18px
 $h5FontSize: $baseFontSize + 0px; // 14px
 $h6FontSize: $baseFontSize - 2px; // 12px

@@ -5,7 +5,7 @@ Main
 */
 
 .canvas {
-  background: url("../img/map_135.png") center 900px no-repeat;
+  background: url("../img/map_135.png") center 75f0px no-repeat;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -125,6 +125,11 @@ footer {
 }
 .list-wrap {
   background: rgba(0,0,0,.5);
+  
+  >img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .list-wrap-33 {
   

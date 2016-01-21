@@ -279,19 +279,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "nexa_boldregular", "AvenirLTStd-Roman", "riccione-mediumregular";
-  font-weight: 200;
+  font-family: "AvenirLTStd-Roman", "nexa_boldregular", "AvenirLTStd-Roman", "riccione-mediumregular";
+  font-weight: 100;
   color: #EE7404;
-  letter-spacing: .05rem;
+  letter-spacing: .25rem;
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 
 h1 {
-  font-size: 42px;
-  font-family: "nexa_boldregular", "AvenirLTStd-Roman", "riccione-boldregular";
-  font-weight: 900;
-  letter-spacing: .1rem;
+  font-size: 30px;
+  font-family: "AvenirLTStd-Roman", "nexa_boldregular", "AvenirLTStd-Roman", "riccione-boldregular";
+  font-weight: 100;
+  letter-spacing: 5px;
   line-height: 1.111em;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -299,13 +299,13 @@ h1 {
 
 h2 {
   color: #555;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.111em;
   margin-bottom: .75rem;
 }
 
 h3 {
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.333em;
   margin-bottom: .5em;
 }
@@ -1614,7 +1614,6 @@ Banner
 }
 
 .banner-img div p {
-  font-size: 1.25rem;
   line-height: 1.75;
 }
 
@@ -1629,7 +1628,7 @@ Banner
 }
 
 .banner-2 {
-  background: url("../img/img-16.jpg") 0 0 no-repeat;
+  background: url("../img/img-14.jpg") 0 0 no-repeat;
   height: 100%;
 }
 
@@ -1644,7 +1643,7 @@ Main
 ==================================================
 */
 .canvas {
-  background: url("../img/map_135.png") center 900px no-repeat;
+  background: url("../img/map_135.png") center 75f 0px no-repeat;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -1759,6 +1758,11 @@ footer .row h3 {
 
 .list-wrap {
   background: rgba(0, 0, 0, 0.5);
+}
+
+.list-wrap > img {
+  display: block;
+  margin: 0 auto;
 }
 
 .list-wrap-33 ul {
