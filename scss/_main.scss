@@ -5,7 +5,7 @@ Main
 */
 
 .canvas {
-  background: url("../img/map_135.png") center 75f0px no-repeat;
+  background: url("../img/map_135.png") center 750px no-repeat;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -126,6 +126,10 @@ footer {
 .list-wrap {
   background: rgba(0,0,0,.5);
   
+  h3 {
+    text-align: center;
+  }
+  
   >img {
     display: block;
     margin: 0 auto;
@@ -150,12 +154,16 @@ footer {
   }
 }
 #featured-trips {
+  //background: url("../img/map_135.png") center 0 no-repeat;
   padding-top: 1em;
   position: relative;
 }
 a[href="#featured-trips"] {
   //background: url("../img/arrow-down.png") no-repeat 50% 120% $colorHighlight;
-  background: $colorHighlight;
+  //background: $colorHighlight;
+  //border: none;
+  background: none;
+  box-shadow: none;
   margin-top: 2em;
   position: absolute;
   right: 0;
@@ -168,14 +176,17 @@ a[href="#featured-trips"] {
 
   &:hover {
     //box-shadow: inset 0 0 0 1px rgba(255,255,255,1), inset 0 0 0 2px $colorHighlight, inset 0 0 0 2px rgba(255,255,255,1);
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0), inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 2px rgba(255,255,255,0);
+    //box-shadow: inset 0 0 0 1px rgba(255,255,255,0), inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 2px rgba(255,255,255,0);
     color: $colorHighlight;
+    padding-bottom: .9em;
+    padding-top: .5em;
     //background: url("../img/arrow-down-hover.png") no-repeat 50% 80% rgba(255,255,255,1);
     //background: url("../img/arrow-down-hover.png") no-repeat 50% 80% rgba(255,255,255,1);
-    background: rgba(255,255,255,1);
+    background: rgba(255,255,255,0);
     //border: 2px solid $colorHighlight;
-    border: 2px solid rgba(0,0,0,0);
-    bottom: 65px;
+    //border: 2px solid rgba(255,255,255,0);
+    bottom: 70px;
+    //margin-bottom: 1em;
     //padding-bottom: 1.25rem;
     //padding-top: 1.25rem;
     //padding-bottom: 2.25rem;
@@ -188,7 +199,7 @@ a[href="#featured-trips"] {
     height: 23px;
     width: 38px;
     position: absolute;
-    top: 85px;
+    top: 70px;
     right: 0;
     left: 0;
     margin: 0 auto;
