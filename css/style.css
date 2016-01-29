@@ -1504,7 +1504,7 @@ Slick Slider
 .slick-slide img {
   display: block;
   position: relative;
-  margin-left: -800px;
+  left: -800px;
   z-index: 0;
 }
 
@@ -1609,8 +1609,14 @@ Banner
 
 .banner-img .left-animate {
   height: 20vh;
-  max-width: 470px;
   max-height: 45px;
+  position: relative;
+  right: -400px;
+}
+
+.banner-img .left-animate.bus {
+  max-width: 191px;
+  max-height: 25px;
 }
 
 .banner-img div {

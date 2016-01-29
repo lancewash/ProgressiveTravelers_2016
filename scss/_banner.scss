@@ -70,8 +70,15 @@ Banner
   }
   .left-animate {
     height: 20vh;
-    max-width: 470px;
+    //max-width: 470px;
     max-height: 45px;
+    position: relative;
+    right: -400px;
+
+    &.bus {
+      max-width: 191px;
+      max-height: 25px;
+    }
   }
 
   div {
