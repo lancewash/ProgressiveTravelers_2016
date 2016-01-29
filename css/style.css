@@ -1,3 +1,13 @@
+/*
+Theme Name: Progressive Travelers
+Theme URI: http://progressivetravelers.net/
+Description: The 2016 Progressive Travelers Website.
+Author: Lance Washington
+Author URI: http://lwinteractive.com/
+Version: 1.0
+License:
+License URI:
+*/
 /* =Normalize
 -----------------------------------------------------------------------------*/
 *,
@@ -645,7 +655,7 @@ table caption {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U20-25CA;
+  unicode-range: U+0020-25CA;
 }
 
 @font-face {
@@ -1300,7 +1310,7 @@ Helpers
 }
 
 .pad {
-  padding: 4em;
+  padding: 4em 0;
 }
 
 .pad-s {
@@ -1467,8 +1477,7 @@ Slick Slider
   height: 100%;
 }
 
-.slick-track:before,
-.slick-track:after {
+.slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
@@ -1494,7 +1503,9 @@ Slick Slider
 
 .slick-slide img {
   display: block;
-  margin: 0 auto;
+  position: relative;
+  margin-left: -800px;
+  z-index: 0;
 }
 
 .slick-slide.slick-loading img {
@@ -1586,14 +1597,14 @@ Banner
 .banner-img .logo a {
   display: block;
   background: url("../img/progressive-travelers-logo-center.png") no-repeat;
-  height: 160px;
+  height: 110px;
   margin: 50px auto;
-  width: 303px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  width: 234px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .banner-img .left-animate {
@@ -1604,7 +1615,7 @@ Banner
 
 .banner-img div {
   color: #fff;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .banner-img div h2 {
@@ -1625,13 +1636,60 @@ Banner
 }
 
 .banner-2 {
-  background: url("../img/img-14.jpg") 0 0 no-repeat;
+  background-image: url("../img/img-14.jpg");
   height: 100%;
 }
 
 .banner-3 {
   background: url("../img/banner-img/banner-img-2.jpg") 0 0;
   height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .canvas {
+    overflow-x: hidden;
+  }
+  .pad {
+    padding: 0;
+  }
+  .banner-img {
+    height: 100%;
+    position: relative;
+  }
+  .banner-img .logo {
+    height: 10vh;
+    width: 100%;
+  }
+  .banner-img .logo a {
+    background: url("../img/progressive-travelers-logo-mobile.png") no-repeat;
+    height: 50px;
+    margin: 50px auto;
+    width: 267px;
+  }
+  .banner-img .left-animate {
+    height: 20vh;
+    max-width: 470px;
+    max-height: 45px;
+  }
+  .banner-img div {
+    color: #fff;
+    margin: 20px auto;
+  }
+  .banner-img div h2 {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .banner-img div p {
+    line-height: 1.75;
+  }
+  .banner-img .feature {
+    height: 25vh;
+    text-align: center;
+    width: 90%;
+  }
+  .list-wrap-33 ul, .list-wrap-33 ul {
+    margin-left: 2em;
+    width: 100% !important;
+  }
 }
 
 /*
@@ -1642,6 +1700,7 @@ Main
 .canvas {
   background: url("../img/map_135.png") center 750px no-repeat;
   margin: 0 auto;
+  overflow-x: hidden;
   padding: 0 1rem;
 }
 
@@ -1673,17 +1732,6 @@ header p a {
   text-transform: uppercase;
 }
 
-header .logo {
-  height: 20vh;
-  /*background: url("../img/progressive-travelers-logo-center.png") no-repeat;
-    height: 160px;
-    width: 303px;*/
-}
-
-header .logo img {
-  position: relative;
-}
-
 section hgroup {
   margin-bottom: 5rem;
 }
@@ -1699,11 +1747,11 @@ main section > img {
   margin: 3em auto;
   max-width: 500px;
   padding: 2.5em 0 2em;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .highlight:hover {
@@ -1753,17 +1801,17 @@ footer .row h3 {
   color: #EE7404;
 }
 
-.list-wrap {
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .list-wrap h3 {
+  margin: 3em auto;
   text-align: center;
 }
 
 .list-wrap > img {
   display: block;
-  margin: 0 auto;
+}
+
+.unit-80 .list-wrap:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .list-wrap-33 ul {

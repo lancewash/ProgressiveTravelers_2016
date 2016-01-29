@@ -31,10 +31,10 @@
 
                     <h2>Saturday, June 4, 2016</h2>
 
-                    <p>Brian Stokes Mitchell and Audra Mcdonald will reunite on broadway in shuffle along. Billy Porter
+                    <!--<p>Brian Stokes Mitchell and Audra Mcdonald will reunite on broadway in shuffle along. Billy Porter
                         joins them, Scott Rudin is producing the show, George C. Wolfe wrote a new book for the
-                        musicalas well as direct, and Savion Glover will choreograph.</p>
-                    <a href="#featured-trips" class="button scroll">Featured Trips</a>
+                        musicalas well as direct, and Savion Glover will choreograph.</p>-->
+                    <!--<a href="#featured-trips" class="button scroll">Featured Trips</a>-->
                 </div>
 
             </div>
@@ -48,7 +48,7 @@
                 &lt;!&ndash;<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>&ndash;&gt;
                 &lt;!&ndash;<img src="img/banner-img/banner-img-4.jpg" alt=""/>&ndash;&gt;
             </div>-->
-        </div>
+        </div><a href="#featured-trips" class="button scroll">Featured Trips</a>
     </section>
     <main>
         <div class="container">
@@ -225,7 +225,7 @@
     <footer>
         <div class="row pad">
             <div class="unit-100">
-                <div class="unit-30">
+                <div class="unit-50">
                     <h3>Progressive Travelers</h3>
 
                     <p>Gloria Griffin<br>
@@ -295,6 +295,12 @@
         });
     });
 
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script>
+    var plane = $(".left-animate");
+
+    TweenLite.to(plane, 50, { x:"2200px", repeat: -5});
 </script>
 </body>
 </html>

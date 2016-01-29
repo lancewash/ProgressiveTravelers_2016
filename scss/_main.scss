@@ -7,6 +7,7 @@ Main
 .canvas {
   background: url("../img/map_135.png") center 750px no-repeat;
   margin: 0 auto;
+  overflow-x: hidden;
   padding: 0 1rem;
 }
 
@@ -37,16 +38,16 @@ header {
       text-transform: uppercase;
     }
   }
-  .logo {
-    height: 20vh;
-    /*background: url("../img/progressive-travelers-logo-center.png") no-repeat;
-    height: 160px;
-    width: 303px;*/
-
-    img {
-      position: relative;
-    }
-  }
+  //.logo {
+  //  height: 20vh;
+  //  background: url("../img/progressive-travelers-logo-center.png") no-repeat;
+  //  height: 110px;
+  //  width: 234px;
+  //
+  //  img {
+  //    position: relative;
+  //  }
+  //}
 }
 
 section hgroup {
@@ -124,15 +125,23 @@ footer {
   }
 }
 .list-wrap {
-  background: rgba(0,0,0,.5);
+ // background: rgba(0,0,0,.5);
   
   h3 {
+    margin: 3em auto;
     text-align: center;
   }
   
   >img {
     display: block;
-    margin: 0 auto;
+    //margin: 0 auto;
+  }
+
+  .unit-80 & {
+
+    &:first-child {
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
   }
 }
 .list-wrap-33 {
