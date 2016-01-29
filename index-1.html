@@ -103,7 +103,7 @@
                     <div class="row flex-wrap sub-intro">
                         <div class="unit-80 centered">
                             <div class="row end pad list-wrap">
-                                <img class="left-animate bus" src="img/bus-left.png" alt=""/>
+                                <!--<img class="left-animate-bus" src="img/bus-left.png" alt=""/>-->
                                 <div class="unit-100">
                                     <h3>One Day Trips</h3>
 
@@ -142,9 +142,10 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <img class="left-animate-bus" src="img/bus-left.png" alt=""/>
                             </div>
                             <div class="row end pad list-wrap">
-                                <img class="left-animate" src="img/flying-jet.png" alt=""/>
+                                <!--<img class="left-animate" src="img/flying-jet.png" alt=""/>-->
                                 <div class="unit-100">
                                     <h3>Multi Day Trips</h3>
                                     <div class="unit-100 list-wrap-50">
@@ -241,6 +242,10 @@
     </footer>
     <a href="#top" class="arrow-up scroll"><img src="img/arrow-up.png" alt=""/></a>
 </div>
+<div class="top-white-bar"></div>
+<div class="bottom-white-bar"></div>
+<div class="left-white-bar"></div>
+<div class="right-white-bar"></div>
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/slick.min.js"></script>
@@ -301,8 +306,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script>
     var plane = $(".left-animate");
-
-    TweenLite.to(plane, 15, { x:"2200px", repeat: 10});
+    TweenLite.to(plane, 50, { x:"2400px", repeat: 10});
+    var bus = $(".left-animate-bus");
+    TweenLite.to(bus, 200, { x:"2400px", repeat: 10});
 </script>
 </body>
 </html>

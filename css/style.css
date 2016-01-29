@@ -655,7 +655,7 @@ table caption {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-25CA;
+  unicode-range: U20-25CA;
 }
 
 @font-face {
@@ -1477,7 +1477,8 @@ Slick Slider
   height: 100%;
 }
 
-.slick-track:before, .slick-track:after {
+.slick-track:before,
+.slick-track:after {
   content: "";
   display: table;
 }
@@ -1591,37 +1592,40 @@ Banner
 }
 
 .banner-img .logo {
-  height: 20vh;
+  height: 15vh;
 }
 
 .banner-img .logo a {
   display: block;
   background: url("../img/progressive-travelers-logo-center.png") no-repeat;
   height: 110px;
-  margin: 50px auto;
+  margin: 125px auto 0;
   width: 234px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-img .left-animate {
-  height: 20vh;
+  height: 15vh;
   max-height: 45px;
   position: relative;
-  right: -400px;
+  left: -500px;
 }
 
-.banner-img .left-animate.bus {
+.banner-img .left-animate-bus {
+  top: 71px;
   max-width: 191px;
   max-height: 25px;
+  position: relative;
+  left: -150px;
 }
 
 .banner-img div {
   color: #fff;
-  margin: 20px auto;
+  margin: 0 auto 50px;
 }
 
 .banner-img div h2 {
@@ -1747,17 +1751,54 @@ main section > img {
   margin: 0 auto 3.5em;
 }
 
+.top-white-bar, .bottom-white-bar {
+  height: 15px;
+  width: 100%;
+  position: fixed;
+  z-index: 8000;
+  background-color: #fff;
+}
+
+.left-white-bar, .right-white-bar {
+  width: 15px;
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: 8000;
+  background-color: #fff;
+}
+
+.left-white-bar {
+  top: 0;
+  left: 0;
+}
+
+.right-white-bar {
+  top: 0;
+  right: 0;
+}
+
+.top-white-bar {
+  top: 0;
+  left: 0;
+}
+
+.bottom-white-bar {
+  bottom: 0;
+  left: 0;
+}
+
 .highlight {
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(238, 116, 4, 0);
   margin: 3em auto;
   max-width: 500px;
   padding: 2.5em 0 2em;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .highlight:hover {
@@ -1844,7 +1885,7 @@ a[href="#featured-trips"] {
   left: 0;
   display: block;
   margin: 0 auto;
-  bottom: 70px;
+  bottom: 100px;
   padding: 1rem 0;
   z-index: 9999999999999;
 }
@@ -1854,7 +1895,7 @@ a[href="#featured-trips"]:hover {
   padding-bottom: .9em;
   padding-top: .5em;
   background: rgba(255, 255, 255, 0);
-  bottom: 70px;
+  bottom: 100px;
 }
 
 a[href="#featured-trips"]:after {
