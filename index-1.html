@@ -18,15 +18,17 @@
         </div>
     </header>
     <section class="banner-wrap" role="banner">
+        <div class="unit-50 logo">
+            <a href=""><!--<img src="img/progressive-travelers-logo-center.png" alt="">--></a>
+        </div>
         <div class="banner">
             <div class="banner-img banner-1" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0"
                  data-stellar-offset-parent="true">
-                <div class="unit-50 logo">
-                    <a href=""><!--<img src="img/progressive-travelers-logo-center.png" alt="">--></a>
-                </div>
                 <div class="unit-100">
-                <img class="left-animate" src="img/flying-jet.png" alt=""/>
+                    <img class="left-animate" src="img/flying-jet.png" alt=""/>
                 </div>
+
+
 
                 <div class="feature unit-50">
                     <h1>Shuffle Along</h1>
@@ -40,16 +42,22 @@
                 </div>
 
             </div>
-            <!--<div class="banner-img banner-2" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0"
+            <div class="banner-img banner-2" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0"
                  data-stellar-offset-parent="true">
-                &lt;!&ndash;<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>&ndash;&gt;
-                &lt;!&ndash;<img src="img/banner-img/banner-img-1.jpg" alt=""/>&ndash;&gt;
+                <div class="unit-100">
+                    <img class="left-animate" src="img/flying-jet.png" alt=""/>
+                </div>
+                <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
+                <!--<img src="img/banner-img/banner-img-1.jpg" alt=""/>-->
             </div>
             <div class="banner-img banner-3" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0"
                  data-stellar-offset-parent="true">
-                &lt;!&ndash;<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>&ndash;&gt;
-                &lt;!&ndash;<img src="img/banner-img/banner-img-4.jpg" alt=""/>&ndash;&gt;
-            </div>-->
+                <div class="unit-100">
+                    <img class="left-animate" src="img/flying-jet.png" alt=""/>
+                </div>
+                <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
+                <!--<img src="img/banner-img/banner-img-4.jpg" alt=""/>-->
+            </div>
         </div><a href="#featured-trips" class="button scroll">Featured Trips</a>
     </section>
     <main>
@@ -254,13 +262,13 @@
         $(".banner").slick({
             dots: true,
             autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 1000,
+            autoplaySpeed: 5000,
+            speed: 2500,
             arrows: false,
             fade: true,
             //lazyLoad: "progressive",
             mobileFirst: true,
-            pauseOnDotsHover: false
+            pauseOnHover: false
         });
 // On swipe event
         $('.banner').on('swipe', function (event, slick, direction) {
@@ -306,9 +314,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script>
     var plane = $(".left-animate");
-    TweenLite.to(plane, 50, { x:"2400px", repeat: 10});
+    //TweenLite.to(plane, 50, { x:1800, scale:0, opacity:0});
+    TweenLite.to(plane, 35, { x:1800, scale:0, opacity:0 }); //,top:-200
     var bus = $(".left-animate-bus");
-    TweenLite.to(bus, 200, { x:"2400px", repeat: 10});
+    TweenLite.to(bus, 100, { x:"2000px"});
 </script>
 </body>
 </html>

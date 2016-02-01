@@ -5,7 +5,7 @@ Main
 */
 
 .canvas {
-  background: url("../img/map_135.png") center 750px no-repeat;
+  background: url("../img/map_135.png") center 650px no-repeat;
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0 1rem;
@@ -149,6 +149,7 @@ footer {
     color: rgba(255,255,255,.9);
     //height: 200px;
     margin: 0;
+    padding: 3em;
     
     h3 {
       color: $colorHighlight;
@@ -161,6 +162,10 @@ footer {
   h3 {
     margin: 3em auto;
     text-align: center;
+
+    main & {
+      margin-top: 0;
+    }
   }
   
   >img {

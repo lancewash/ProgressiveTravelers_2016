@@ -1,0 +1,49 @@
+@media only screen and (max-width: 767px) {
+  .canvas {
+    overflow-x: hidden;
+  }
+  .pad {
+    padding: 0;
+  }
+  .banner-img {
+    height: 100%;
+    position: relative;
+  }
+  .banner-img .logo {
+    height: 10vh;
+    width: 100%;
+  }
+  .banner-img .logo a {
+    background: url("../img/progressive-travelers-logo-mobile.png") no-repeat;
+    height: 50px;
+    margin: 50px auto;
+    width: 267px;
+  }
+  .banner-img .left-animate {
+    height: 20vh;
+    max-width: 470px;
+    max-height: 45px;
+  }
+  .banner-img div {
+    color: #fff;
+    margin: 20px auto;
+  }
+  .banner-img div h2 {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .banner-img div p {
+    line-height: 1.75;
+  }
+  .banner-img .feature {
+    height: 25vh;
+    text-align: center;
+    width: 90%;
+  }
+  .list-wrap-33 ul, .list-wrap-33 ul {
+    margin-left: 2em;
+    width: 100% !important;
+  }
+  .arrow-up {
+    display: none;
+  }
+}

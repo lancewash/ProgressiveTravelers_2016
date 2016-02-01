@@ -289,7 +289,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "AvenirLTStd-Roman", "nexa_boldregular", "AvenirLTStd-Roman", "riccione-mediumregular";
+  font-family: "nexa_boldregular", "AvenirLTStd-Roman", "riccione-mediumregular";
   font-weight: 100;
   color: #EE7404;
   letter-spacing: .25rem;
@@ -299,7 +299,7 @@ h6 {
 
 h1 {
   font-size: 30px;
-  font-family: "AvenirLTStd-Roman", "nexa_boldregular", "AvenirLTStd-Roman", "riccione-boldregular";
+  font-family: "nexa_boldregular", "AvenirLTStd-Roman", "riccione-boldregular";
   font-weight: 100;
   letter-spacing: 5px;
   line-height: 1.111em;
@@ -655,7 +655,7 @@ table caption {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U20-25CA;
+  unicode-range: U+0020-25CA;
 }
 
 @font-face {
@@ -1477,8 +1477,7 @@ Slick Slider
   height: 100%;
 }
 
-.slick-track:before,
-.slick-track:after {
+.slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
@@ -1547,6 +1546,81 @@ Slick Slider
 
 /* Arrows */
 /* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: -20px;
+  margin: 0 0 2rem 0;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 1%;
+  height: 10px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 100%;
+  height: 10px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slick-dots li button:hover {
+  background: white;
+}
+
+.slick-dots li.slick-active button {
+  background: white;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
 /*
 ==================================================
 Banner
@@ -1586,33 +1660,35 @@ Banner
   border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.logo a {
+  display: block;
+  background: url("../img/progressive-travelers-logo-center.png") no-repeat;
+  height: 110px;
+  margin: 75px auto 0;
+  width: 234px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
 .banner-img {
   height: 100%;
   position: relative;
 }
 
-.banner-img .logo {
-  height: 15vh;
-}
-
-.banner-img .logo a {
-  display: block;
-  background: url("../img/progressive-travelers-logo-center.png") no-repeat;
-  height: 110px;
-  margin: 125px auto 0;
-  width: 234px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
 .banner-img .left-animate {
   height: 15vh;
-  max-height: 45px;
-  position: relative;
-  left: -500px;
+  top: 150px;
+  max-height: 30px;
+  position: absolute;
+  left: -150px;
 }
 
 .banner-img .left-animate-bus {
@@ -1625,7 +1701,11 @@ Banner
 
 .banner-img div {
   color: #fff;
-  margin: 0 auto 50px;
+  margin: 250px auto 50px;
+}
+
+main .banner-img div {
+  margin: 0 auto;
 }
 
 .banner-img div h2 {
@@ -1651,55 +1731,8 @@ Banner
 }
 
 .banner-3 {
-  background: url("../img/banner-img/banner-img-2.jpg") 0 0;
+  background-image: url("../img/img-20.jpg");
   height: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-  .canvas {
-    overflow-x: hidden;
-  }
-  .pad {
-    padding: 0;
-  }
-  .banner-img {
-    height: 100%;
-    position: relative;
-  }
-  .banner-img .logo {
-    height: 10vh;
-    width: 100%;
-  }
-  .banner-img .logo a {
-    background: url("../img/progressive-travelers-logo-mobile.png") no-repeat;
-    height: 50px;
-    margin: 50px auto;
-    width: 267px;
-  }
-  .banner-img .left-animate {
-    height: 20vh;
-    max-width: 470px;
-    max-height: 45px;
-  }
-  .banner-img div {
-    color: #fff;
-    margin: 20px auto;
-  }
-  .banner-img div h2 {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  .banner-img div p {
-    line-height: 1.75;
-  }
-  .banner-img .feature {
-    height: 25vh;
-    text-align: center;
-    width: 90%;
-  }
-  .list-wrap-33 ul, .list-wrap-33 ul {
-    margin-left: 2em;
-    width: 100% !important;
-  }
 }
 
 /*
@@ -1708,7 +1741,7 @@ Main
 ==================================================
 */
 .canvas {
-  background: url("../img/map_135.png") center 750px no-repeat;
+  background: url("../img/map_135.png") center 650px no-repeat;
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0 1rem;
@@ -1794,11 +1827,11 @@ main section > img {
   margin: 3em auto;
   max-width: 500px;
   padding: 2.5em 0 2em;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .highlight:hover {
@@ -1842,6 +1875,7 @@ footer .row {
   background: url("../img/map_135.png") center 0 no-repeat rgba(34, 81, 132, 0.9);
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
+  padding: 3em;
 }
 
 footer .row h3 {
@@ -1851,6 +1885,10 @@ footer .row h3 {
 .list-wrap h3 {
   margin: 3em auto;
   text-align: center;
+}
+
+main .list-wrap h3 {
+  margin-top: 0;
 }
 
 .list-wrap > img {
@@ -1928,4 +1966,54 @@ a[href="#featured-trips"]:after {
   position: fixed;
   right: 3em;
   bottom: 2em;
+}
+
+@media only screen and (max-width: 767px) {
+  .canvas {
+    overflow-x: hidden;
+  }
+  .pad {
+    padding: 0;
+  }
+  .banner-img {
+    height: 100%;
+    position: relative;
+  }
+  .banner-img .logo {
+    height: 10vh;
+    width: 100%;
+  }
+  .banner-img .logo a {
+    background: url("../img/progressive-travelers-logo-mobile.png") no-repeat;
+    height: 50px;
+    margin: 50px auto;
+    width: 267px;
+  }
+  .banner-img .left-animate {
+    height: 20vh;
+    max-width: 470px;
+    max-height: 45px;
+  }
+  .banner-img div {
+    color: #fff;
+    margin: 20px auto;
+  }
+  .banner-img div h2 {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .banner-img div p {
+    line-height: 1.75;
+  }
+  .banner-img .feature {
+    height: 25vh;
+    text-align: center;
+    width: 90%;
+  }
+  .list-wrap-33 ul, .list-wrap-33 ul {
+    margin-left: 2em;
+    width: 100% !important;
+  }
+  .arrow-up {
+    display: none;
+  }
 }
