@@ -655,7 +655,7 @@ table caption {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-25CA;
+  unicode-range: U20-25CA;
 }
 
 @font-face {
@@ -1477,7 +1477,8 @@ Slick Slider
   height: 100%;
 }
 
-.slick-track:before, .slick-track:after {
+.slick-track:before,
+.slick-track:after {
   content: "";
   display: table;
 }
@@ -1666,11 +1667,11 @@ Banner
   height: 110px;
   margin: 75px auto 0;
   width: 234px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: absolute;
   top: 0;
   right: 0;
@@ -1694,7 +1695,7 @@ Banner
 .banner-img .left-animate-bus {
   top: 71px;
   max-width: 191px;
-  max-height: 25px;
+  max-height: 35px;
   position: relative;
   left: -150px;
 }
@@ -1827,11 +1828,11 @@ main section > img {
   margin: 3em auto;
   max-width: 500px;
   padding: 2.5em 0 2em;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .highlight:hover {
