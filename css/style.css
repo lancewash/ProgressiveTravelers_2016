@@ -1742,7 +1742,9 @@ Main
 ==================================================
 */
 .canvas {
-  background: url("../img/map_135.png") center 650px no-repeat;
+  background-image: url("../img/map_135.png"), url("../img/map_135.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 850px, center 2100px;
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0 1rem;
@@ -1868,6 +1870,36 @@ main section > img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.trip-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.split {
+  margin-bottom: 0;
+}
+
+.row article.unit-33 {
+  padding: 1em 2.5em 2.5em;
+  margin-bottom: 0;
+  width: 33.333%;
+  margin-left: 0;
+}
+
+.row article.unit-33:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.row article.unit-33:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.05);
+  margin-left: 0;
+}
+
+.row article.unit-33:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.025);
+  margin-left: 0;
+}
+
 footer {
   margin-bottom: 1em;
 }
@@ -1915,6 +1947,10 @@ main .list-wrap h3 {
   position: relative;
 }
 
+#featured-trips h1 {
+  margin: 2em 0;
+}
+
 a[href="#featured-trips"] {
   background: none;
   box-shadow: none;
@@ -1947,11 +1983,6 @@ a[href="#featured-trips"]:after {
   right: 0;
   left: 0;
   margin: 0 auto;
-}
-
-.trip-posts article {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2em 0;
 }
 
 .main-intro {

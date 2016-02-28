@@ -5,7 +5,11 @@ Main
 */
 
 .canvas {
-  background: url("../img/map_135.png") center 650px no-repeat;
+  background-image: url("../img/map_135.png"), url("../img/map_135.png");
+  background-repeat: no-repeat, no-repeat;
+
+  background-position: center 850px, center 2100px;
+  //background-position: center 1750px;
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0 1rem;
@@ -23,7 +27,7 @@ header {
   top: 0;
   padding: 0 4rem;
   left: 0;
-  
+
   .row {
     display: table-cell;
   }
@@ -32,7 +36,7 @@ header {
     line-height: 2rem;
     margin: 0;
     text-align: right;
-    
+
     a {
       text-decoration: none;
       text-transform: uppercase;
@@ -54,14 +58,15 @@ section hgroup {
   margin-bottom: 5rem;
 }
 
-main   {
+main {
   //background: url("../img/map_135.png") center top no-repeat;
-  
-  section>img {
+
+  section > img {
     display: block;
     margin: 0 auto 3.5em;
   }
 }
+
 .top-white-bar, .bottom-white-bar {
   height: 15px;
   width: 100%;
@@ -69,6 +74,7 @@ main   {
   z-index: 8000;
   background-color: #fff;
 }
+
 .left-white-bar, .right-white-bar {
   width: 15px;
   height: 100%;
@@ -77,10 +83,12 @@ main   {
   z-index: 8000;
   background-color: #fff;
 }
+
 .left-white-bar {
   top: 0;
   left: 0;
 }
+
 .right-white-bar {
   top: 0;
   right: 0;
@@ -90,14 +98,16 @@ main   {
   top: 0;
   left: 0;
 }
+
 .bottom-white-bar {
   bottom: 0;
   left: 0;
 }
+
 .highlight {
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, .5);
   //border: 1px solid rgba(238,116,4,.5);
-  border: 2px solid rgba(238,116,4,0);
+  border: 2px solid rgba(238, 116, 4, 0);
   //box-shadow:  inset 0 0 0 1px rgba(238,116,4,.75), inset 0 0 0 3px rgba(255,255,255,1), inset 0 0 0 4px rgba(238,116,4,.25);
   margin: 3em auto;
   max-width: 500px;
@@ -109,8 +119,8 @@ main   {
   transition: all .5s ease-in-out;
 
   &:hover {
-    background: rgba(255,255,255,1);
-    border: 2px solid rgba(238,116,4,.25);
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(238, 116, 4, .25);
   }
 }
 
@@ -119,46 +129,84 @@ main   {
 }
 
 .inverted {
-  background: rgba(238,116,4,.9);
-  color: rgba(255,255,255,.9);
+  background: rgba(238, 116, 4, .9);
+  color: rgba(255, 255, 255, .9);
   text-align: left;
 
   p, h1, h2, h3, h4 {
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
   }
 }
 
 .inverted2 {
-  background: rgba(34,81,132,.9);
-  color: rgba(255,255,255,.9);
+  background: rgba(34, 81, 132, .9);
+  color: rgba(255, 255, 255, .9);
   text-align: left;
 
   p, h1, h2, h3, h4 {
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
   }
 }
+
 .card {
   border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.trip-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+
+  &.split {
+    margin-bottom: 0;
+  }
+  article.unit-33 {
+    //border: 1px solid rgba(0,0,0,.1);
+    padding: 1em 2.5em 2.5em;
+    margin-bottom: 0;
+    width: 33.333%;
+    //flex-grow: 3;
+    //float: none;
+    //min-height: 300px;
+    //width: auto;
+    margin-left: 0;
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+    }
+
+    &:nth-of-type(odd) {
+      background: rgba(0, 0, 0, .05);
+      margin-left: 0;
+    }
+    &:nth-of-type(even) {
+      background: rgba(0, 0, 0, .025);
+      margin-left: 0;
+    }
+  }
 }
 
 footer {
   margin-bottom: 1em;
 
   .row {
-    background: url("../img/map_135.png") center 0 no-repeat rgba(34,81,132,.9);
-    color: rgba(255,255,255,.9);
+    background: url("../img/map_135.png") center 0 no-repeat rgba(34, 81, 132, .9);
+    color: rgba(255, 255, 255, .9);
     //height: 200px;
     margin: 0;
     padding: 3em;
-    
+
     h3 {
       color: $colorHighlight;
     }
   }
 }
+
 .list-wrap {
- // background: rgba(0,0,0,.5);
-  
+  // background: rgba(0,0,0,.5);
+
   h3 {
     margin: 3em auto;
     text-align: center;
@@ -167,8 +215,8 @@ footer {
       margin-top: 0;
     }
   }
-  
-  >img {
+
+  > img {
     display: block;
     //margin: 0 auto;
   }
@@ -176,12 +224,13 @@ footer {
   .unit-80 & {
 
     &:first-child {
-      border-bottom: 1px solid rgba(255,255,255,.1);
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
     }
   }
 }
+
 .list-wrap-33 {
-  
+
   ul {
     float: left;
     width: 31.5%;
@@ -191,18 +240,25 @@ footer {
     //}
   }
 }
+
 .list-wrap-50 {
-  
+
   ul {
     float: left;
     width: 48%;
   }
 }
+
 #featured-trips {
   //background: url("../img/map_135.png") center 0 no-repeat;
   padding-top: 1em;
   position: relative;
+
+  h1 {
+    margin: 2em 0;
+  }
 }
+
 a[href="#featured-trips"] {
   //background: url("../img/arrow-down.png") no-repeat 50% 120% $colorHighlight;
   //background: $colorHighlight;
@@ -228,7 +284,7 @@ a[href="#featured-trips"] {
     padding-top: .5em;
     //background: url("../img/arrow-down-hover.png") no-repeat 50% 80% rgba(255,255,255,1);
     //background: url("../img/arrow-down-hover.png") no-repeat 50% 80% rgba(255,255,255,1);
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
     //border: 2px solid $colorHighlight;
     //border: 2px solid rgba(255,255,255,0);
     bottom: 100px;
@@ -238,7 +294,7 @@ a[href="#featured-trips"] {
     //padding-bottom: 2.25rem;
     //bottom: 35px;
   }
-  
+
   &:after {
     background: url("../img/arrow-down.png") no-repeat;
     content: '';
@@ -249,16 +305,16 @@ a[href="#featured-trips"] {
     right: 0;
     left: 0;
     margin: 0 auto;
- }
-}
-
-.trip-posts {
-  
-  article {
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    padding: 2em 0;
   }
 }
+
+//.trip-posts {
+//
+//  article {
+//    //border-bottom: 1px solid rgba(0,0,0,.1);
+//    padding: 2em 0;
+//  }
+//}
 
 .main-intro {
   //background: rgba(34, 81, 132, 0.9);
@@ -272,16 +328,16 @@ a[href="#featured-trips"] {
   //background: rgba(0, 0, 0, .5);
   //background: url("../img/img-2.jpg") 50% 50% no-repeat;
   //color: rgba(255, 255, 255, 1);
-  
+
   h3 {
     //color: rgba(255,255,255,1);
   }
 }
 
-
 .slick-slider {
   height: calc(100vh - 1rem);
 }
+
 .arrow-up {
   position: fixed;
   right: 3em;
